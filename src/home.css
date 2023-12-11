@@ -1,0 +1,66 @@
+.topnav {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(44, 43, 43);
+}
+
+.topnav a {
+    color: #fff;
+    padding: 14px 14px;
+    display: none;
+    float: none;
+    text-align: left;
+    margin: 0;
+    
+}
+
+        .topnav a:hover {
+            background-color: rgb(141, 133, 133);
+        }
+
+        .topnav a.active {
+            background-color: #91b852;
+        }
+
+        .topnav a.icon {
+            width: 23px;
+            height: 16px;
+            float: right;
+            padding: 15px;
+            display: block;
+        }
+
+        .topnav a.icon .line {
+            background-color: #fff;
+            margin: 2px;
+            height: 3px;
+            display: block;
+        }
+
+        .topnav.open a {
+            display: block;
+        }
+
+        .topnav.open a.icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .box a {
+            padding-left: 38px;
+        }
+
+
+@media only screen and (min-width: 768px){
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+
+    }
+
+    .topnav a.icon {
+        display: none;
+    }
+}
